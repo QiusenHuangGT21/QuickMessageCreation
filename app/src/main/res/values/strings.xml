@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">报单生成</string>
+    <string name="input_your_text">input your message</string>
+    <string name="send_message_button_text">发送信息</string>
+    <string name="spinner1_name">发货人</string>
+    <string name="weight_String">重量</string>
+    <string name="weight_unit">吨</string>
+    <string name="Vehicle_num">车号:</string>
+    <string name="add_button_text">增加</string>
+    <string name="car_num_hint">闽X00000</string>
+    <string name="clear_button_text">清除所有</string>
+    <string name="show_message_button_text">查看信息</string>
+    <string name="default_message_view">信息</string>
+    <string name="return_button_text">增加</string>
+    <string name="sendButtonText">发送</string>
+    <string name="reset_button_text">重置</string>
+    <string-array name="spinner1_String_Array">
+        <item>发货人</item>
+        <item>(邦信贸易) 海润建材黄海梅 (代码0603)</item>
+        <item>黄海梅</item>
+        <item>海润建材</item>
+        <item>邦信贸易</item>
+    </string-array>
+    <string-array name="spinner2_String_Array">
+        <item>品牌</item>
+        <item>明狮牌</item>
+        <item>春驰牌</item>
+        <item>龙麟牌</item>
+        <item>闽强牌</item>
+        <item>银剑牌</item>
+        <item>龟山牌</item>
+
+    </string-array>
+
+    <string-array name="spinner3_String_Array">
+        <item>包装</item>
+        <item>编织袋</item>
+        <item>复合袋</item>
+        <item>散装</item>
+    </string-array>
+
+    <string-array name="spinner4_String_Array">
+        <item>规格</item>
+        <item>PC32.5</item>
+        <item>PC32.5R</item>
+        <item>PO42.5</item>
+        <item>PO42.5R</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateMessageActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:entries="@array/spinner1_String_Array"
+                android:paddingLeft="30dp"
+                app:layout_constraintStart_toStartOf="@id/weight"
+                app:layout_constraintTop_toTopOf="@id/car_input" />
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:entries="@array/spinner2_String_Array"
+                android:paddingLeft="30dp"
+                app:layout_constraintStart_toStartOf="@+id/spinner1"
+                app:layout_constraintTop_toBottomOf="@+id/spinner1" />
+
+            <Spinner
+                android:id="@+id/spinner3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:entries="@array/spinner3_String_Array"
+                android:paddingLeft="30dp"
+                app:layout_constraintStart_toStartOf="@+id/spinner2"
+                app:layout_constraintTop_toBottomOf="@+id/spinner2" />
+
+            <Spinner
+                android:id="@+id/spinner4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:entries="@array/spinner4_String_Array"
+                android:paddingLeft="30dp"
+                app:layout_constraintStart_toStartOf="@+id/spinner3"
+                app:layout_constraintTop_toBottomOf="@+id/spinner3" />
+
+
+            <EditText
+                android:id="@+id/weight"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/weight_String"
+                android:maxWidth="50dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                android:text="@string/weight_unit"
+                app:layout_constraintStart_toEndOf="@+id/weight"
+                app:layout_constraintTop_toTopOf="@+id/weight" />
+
+            <TextView
+                android:id="@+id/CAR_NUM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                android:text="@string/Vehicle_num"
+                app:layout_constraintStart_toStartOf="@+id/weight"
+                app:layout_constraintTop_toBottomOf="@+id/weight" />
+
+            <EditText
+                android:id="@+id/car_input"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="10dp"
+                android:hint="闽X00000"
+                app:layout_constraintStart_toEndOf="@+id/CAR_NUM"
+                app:layout_constraintTop_toBottomOf="@+id/weight" />
+
+
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+    <Button
+        android:layout_width="89dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="增加"
+        android:onClick="onAddInfo"
+        app:layout_constraintStart_toStartOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="60dp"
+        android:onClick="onSendMessage"
+        android:shadowColor="@color/colorPrimaryDark"
+        android:text="@string/send_message_button_text"
+        app:layout_constraintStart_toStartOf="@+id/scrollView2"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+
+</android.support.constraint.ConstraintLayout>
